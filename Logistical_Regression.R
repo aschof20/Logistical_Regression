@@ -1,3 +1,9 @@
+#Import Libraries
+library(ggpubr)
+library(car) 
+library(class)
+library(psych)
+
 ###############################################################################
 #                                DATA PROCESSING                              #
 ###############################################################################
@@ -113,3 +119,4 @@ table(glm.pred,test$survive)
 mean(glm.pred==test$survive)
 # Error rate of Logistic Regression
 mean(glm.pred!=test$survive)
+
